@@ -9,7 +9,11 @@ header {
     header {
         min-height: 500px;
     }
+    img {
+        min-height: 100px;
+    }
 }
 .titulo{
     text-align: center;
 }
+
