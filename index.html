@@ -17,7 +17,8 @@
 
     </nav>
 </header>
-<body ondragstart="return false" onselectstart="return false" oncontextmenu="return false">
+<!-- ondragstart="return false" onselectstart="return false" oncontextmenu="return false" -->
+<body>
         <div class="row">
             <div class="col s2">
                 <img src="source/conocer.png" alt="Conocer" height="200px" width="200px">
@@ -46,30 +47,45 @@
             </div>
         </div>
 
+
+    <!-- Actividad 1 -->
 <section>
+    <div class="row" >
+            <div class="col 12 actividad">
+                <h3>Actividad 1</h3>
+            </div>
+    </div>
     <!-- Codigo -->
     <div class="row">
-        <div class="col s6 ">
-            <h4 class= "blue-text text-darken-2" >Código</h4>
+        <div class="col s6" ondragstart = "return false" onselectstart="return false" oncontextmenu="return false">
+            <h4 class= "blue-text text-darken-2" >Descripción</h4>
+            <!-- Descipción de los pasos para la prograición -->
+            <h6 class="orange-text text-darken-4">Importar librería</h6>
                 <p class = "blue-grey-text text-darken-4">
                         Para usar la librería del servomotor primero tiene que importarla. Esto añade nuevas
-                        funciones al sketch desde la librería.
+                        funciones al  desde la librería.
                 </p>
+            <h6 class="orange-text text-darken-4">Crear el objeto Servo</h6>
                 <p>     Para referirse a la librería servo, es necesario crear un nombre de esta librería en una
-                        variable (MiServo). Esto se conoce con el nombre de un objeto. Cuando se hace esto, se
+                        variable (miServo). Esto se conoce con el nombre de un objeto. Cuando se hace esto, se
                         crea un nombre único que tendrá todas las funciones y capacidades que la librería servo
-                        posee. A partir de este punto en el programa, cada vez que se utilice el nombre MiServo,
+                        posee. A partir de este punto en el programa, cada vez que se utilice el nombre miServo,
                         se podrá usar todas esas funciones y capacidades de la librería servo.
                 </p>
+            <h6 class="orange-text text-darken-4">Crear variables</h6>
                 <p>
                         Poner una variable de tipo  entero con un nombre y el valor del ángulo (Angulo) al que el servomotor se debe
                         de mover.
                 </p>
+            <br>
+            <h6 class="orange-text text-darken-4">Declarar el pin al que va conectado el Servomotor</h6>
                 <p>
                         Dentro de la función setup() es necesario decirle a Arduino que pin está unido al servomotor
                 </p>
+            <br>
+            <h6 class="orange-text text-darken-4">Movimientos</h6>
                 <p>
-                        Finalmente, es el momento de mover el servomotor. El comando MiServo.write(Angulo)
+                        Finalmente, es el momento de mover el servomotor. El comando miServo.write(Angulo)
                         mueve el servomotor al ángulo que se indica dentro de la variable Angulo del argumento
                         de esta instrucción.
                         Al final de la función loop() se coloca un retraso de 100 mili segundos delay(100) para que
@@ -79,31 +95,53 @@
         
         <div class="col s6">
             <h4 class = "blue-text text-darken-2 " >
-            ¿Qué hace?
+            Código
             </h4>
-                <p>#include < Servo.h > </p>
-                <p></p>
-                <p></p>
-                <p></p>
+                <ul>
+                </br>
+                    <lu><textarea name="" id="linea0" cols="30" rows="20"></textarea></lu>
+                <br>
+                <br>
+                <br>
+                <br>
+                    <lu><textarea name="" id="linea1" cols="30" rows="20"></textarea></lu>
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                    <lu><textarea name="" id="linea2" cols="30" rows="20"></textarea></lu>
+                <br>
+                <br>
+                <span class="blue-text text-darken-2">void</span> <span class="light-green-text text-darken-4">setup</span>(){
+                    <lu><textarea name="" id="linea3" cols="30" rows="20"></textarea></lu>
+                }
+                <br>
+                <br>
+                <br>
+                <span class="blue-text text-darken-2">void</span> <span class="light-green-text text-darken-4">loop</span>(){
+                    <lu><textarea name="" id="linea4" cols="30" rows="20"></textarea></lu>
+                }
+                </ul>
+                
         </div>
     </div>
 </section>
+    <!-- Actividad 2 -->
 <section>
     <!-- reto -->
-    <div class="row">
-            <div class="col 12">
-                    <h1>Aquí va el reto</h1>
+    <div class="row" >
+            <div class="col 12 actividad">
+                <h3>Actividad 2</h3>
             </div>
-        
-    </div>
-    
+    </div> 
 </section>
 
 <section>
         <div class="row">
                 <div class="col s4"></div>
                 <div class="col s4 ">
-                    <input   id="codigo" type="text">  </input> <labe>Ingresa el Código</labe>
+                    <input   id="codigo" type="password" ></input> <labe>Ingresa el Código</labe>
                 </div>
                 <div class="col s4"></div>
                 </div>
